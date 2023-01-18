@@ -1,0 +1,22 @@
+@layer utilities {
+    .content-auto {
+      content-visibility: auto;
+    }
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    .no-scrollbar {
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+    }
+}
+
+.load{
+    font-size:20px;
+    font-weight:bold;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:85vw;
+}

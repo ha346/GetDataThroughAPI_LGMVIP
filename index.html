@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            primaryBg: '#FFF',
+            secondaryBG: '#FFF',
+            primaryTxt: '#7EB77F',
+            secondaryTxt: '#DCD7C9'
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-primaryBg">
+  <section class="bg-primaryBg  w-full ">
+    <div class="heading  flex justify-center bg-secondaryBG p-4">
+      <h2 style="display:flex;justify-content:flex-start;width:90%;font-family: 'Libre Baskerville', serif;" class="text-xl md:text-4xl text-primaryTxt">Get User's Data From API </h2>
+      <button
+        class="block text-white bg-primaryTxt  hover:bg-secondaryTxt  font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-primaryTxt dark:hover:bg-secondaryTxt dark:hover:text-primaryTxt  ml-4"
+        type="button" data-modal-toggle="authentication-modal" id="push">
+        Get Users
+      </button>
+    </div>
+     
+    
+    <section class="">
+      <div class="px-4 py-16 mx-auto max-w-screen-xl sm:px-6 lg:px-8 sm:py-24" >
+        
+
+        <div class="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 sm:gap-16 cards" id="cards">
+          
+        </div>
+      </div>
+    </section>
+
+  </section>
+
+  <!-- Script files -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+  <script src="brain.js"></script>
+</body>
+
+</html>
